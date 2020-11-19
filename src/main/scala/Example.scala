@@ -29,6 +29,24 @@ object Example {
               .fillColor(Color.red.lighten(0.1.normalized))
           )
       )
+      .above(
+        Image
+          .rectangle(30,100)
+          .strokeWidth(5)
+          .fillColor(Color.brown)
+      )
+      .above(
+        Image
+          .rectangle(100,30)
+          .strokeWidth(5)
+          .fillColor(Color.brown)
+      )
+      .above(
+        Image
+          .rectangle(500,150)
+          .noStroke
+          .fillColor(Color.green)
+      )
 
 
 
