@@ -11,12 +11,34 @@ import scala.concurrent.duration._
 // 1. run `sbt`
 // 2. run the `run` command within `sbt`
 object Example {
-  val image =
+
+  val image: Image =
     Image
-      .circle(10)
-      .fillColor(Color.red)
-      .on(Image.circle(20).fillColor(Color.aquamarine))
-      .on(Image.circle(30).fillColor(Color.steelBlue))
+      .triangle(200,200)
+      .strokeWidth(30)
+      .strokeColor(Color.darkSlateBlue)
+      .fillColor(Color.darkSlateBlue.lighten(0.25.normalized))
+      .above(
+        Image
+          .triangle(200,200)
+          .strokeWidth(30)
+          .strokeColor(Color.darkSlateBlue.spin(-20.degrees))
+          .fillColor(Color.darkSlateBlue.spin(-20.degrees).lighten(0.25.normalized))
+          .beside(
+            Image
+              .triangle(200,200)
+              .strokeWidth(30)
+              .strokeColor(Color.darkSlateBlue.spin(20.degrees))
+              .fillColor(Color.darkSlateBlue.spin(20.degrees).lighten(0.25.normalized))
+          )
+      )
+
+//  val image =
+//    Image
+//      .circle(10)
+//      .fillColor(Color.red)
+//      .on(Image.circle(20).fillColor(Color.aquamarine))
+//      .on(Image.circle(30).fillColor(Color.steelBlue))
 
   val animation =
     Reactor
@@ -39,6 +61,6 @@ object Example {
     image.draw()
 
     // Comment out the above and uncomment the below to display the animation
-    // animation.run(frame)
+//     animation.run(frame)
   }
 }
