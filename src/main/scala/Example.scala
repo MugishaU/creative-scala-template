@@ -14,6 +14,26 @@ object Example {
 
   val image: Image =
     Image
+      .circle(100)
+      .strokeWidth(5)
+      .fillColor(Color.red.lighten(0.1.normalized))
+      .on(
+        Image
+          .circle(200)
+          .strokeWidth(5)
+          .fillColor(Color.white)
+          .on(
+            Image
+              .circle(300)
+              .strokeWidth(5)
+              .fillColor(Color.red.lighten(0.1.normalized))
+          )
+      )
+
+
+
+  val triangle: Image =
+    Image
       .triangle(200,200)
       .strokeWidth(30)
       .strokeColor(Color.darkSlateBlue)
