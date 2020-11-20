@@ -22,4 +22,19 @@ object Street{
              .noStroke
          )
      )
+
+  val pavement: Image =
+    roadTile beside roadTile beside roadTile
+
+  val tree: Image =
+    Image
+      .rectangle(50,100)
+      .fillColor(Color.brown)
+      .noStroke
+      .below(
+        Image
+          .circle(250)
+          .fillColor(Color.green)
+          .noStroke
+      )
 }
