@@ -11,8 +11,7 @@ import scala.concurrent.duration._
 // 1. run `sbt`
 // 2. run the `run` command within `sbt`
 object Example {
-
-  val image: Image =
+  val target: Image=
     Image
       .circle(100)
       .strokeWidth(5)
@@ -29,6 +28,10 @@ object Example {
               .fillColor(Color.red.lighten(0.1.normalized))
           )
       )
+
+
+  val image: Image =
+    target
       .above(
         Image
           .rectangle(30,100)
