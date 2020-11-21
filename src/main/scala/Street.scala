@@ -7,17 +7,17 @@ import doodle.java2d._
 object Street{
  val roadTile : Image =
    Image
-     .rectangle(300,50)
+     .rectangle(210,50)
      .fillColor(Color.black)
      .noStroke
      .below(
        Image
-         .rectangle(200,15)
+         .rectangle(140,15)
          .fillColor(Color.yellow)
          .noStroke
          .beside(
            Image
-             .rectangle(100,15)
+             .rectangle(70,15)
              .fillColor(Color.black)
              .noStroke
          )
@@ -37,4 +37,45 @@ object Street{
           .fillColor(Color.green)
           .noStroke
       )
+  val houseRoof: Image =
+    Image
+      .triangle(250,125)
+      .fillColor(Color.brown)
+      .noStroke
+
+  val houseBody: Image =
+    Image
+      .rectangle(250,80)
+      .fillColor(Color.red)
+      .noStroke
+      .above(
+        Image
+          .rectangle(100,145)
+          .fillColor(Color.red)
+          .noStroke
+          .beside(
+            Image
+              .rectangle(50,145)
+              .fillColor(Color.black)
+              .noStroke
+              .beside(
+                Image
+                  .rectangle(100,145)
+                  .fillColor(Color.red)
+                  .noStroke
+              )
+          )
+      )
+
+  val house: Image =
+    houseRoof
+      .above(
+        houseBody
+      )
+
+  val residence: Image =
+    pavement below (house beside tree)
+
+  val scene: Image =
+    residence beside residence beside residence
 }
