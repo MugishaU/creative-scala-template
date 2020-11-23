@@ -8,6 +8,7 @@ initialCommands in console := """
       |import doodle.image.syntax._
       |import doodle.image.syntax.core._
       |import doodle.java2d._
+      |import Chapter1to4._
     """.trim.stripMargin
 
 libraryDependencies ++= Seq(

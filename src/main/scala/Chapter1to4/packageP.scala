@@ -1,4 +1,4 @@
-package packageP
+package Chapter1to4
 
 object One {
   val one = 1

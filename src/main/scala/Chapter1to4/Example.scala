@@ -1,17 +1,17 @@
+package Chapter1to4
+
+
 import doodle.core._
 import doodle.image._
 import doodle.image.syntax._
 import doodle.image.syntax.core._
 import doodle.java2d._
-import doodle.reactor._
-import scala.concurrent.duration._
-
 // To use this example:
 //
 // 1. run `sbt`
 // 2. run the `run` command within `sbt`
 object Example {
-  val target: Image=
+  val target: Image =
     Image
       .circle(100)
       .strokeWidth(5)
@@ -34,66 +34,65 @@ object Example {
     target
       .above(
         Image
-          .rectangle(30,100)
+          .rectangle(30, 100)
           .strokeWidth(5)
           .fillColor(Color.brown)
       )
       .above(
         Image
-          .rectangle(100,30)
+          .rectangle(100, 30)
           .strokeWidth(5)
           .fillColor(Color.brown)
       )
       .above(
         Image
-          .rectangle(500,150)
+          .rectangle(500, 150)
           .noStroke
           .fillColor(Color.green)
       )
 
 
-
   val triangle: Image =
     Image
-      .triangle(200,200)
+      .triangle(200, 200)
       .strokeWidth(30)
       .strokeColor(Color.darkSlateBlue)
       .fillColor(Color.darkSlateBlue.lighten(0.25.normalized))
       .above(
         Image
-          .triangle(200,200)
+          .triangle(200, 200)
           .strokeWidth(30)
           .strokeColor(Color.darkSlateBlue.spin(-20.degrees))
           .fillColor(Color.darkSlateBlue.spin(-20.degrees).lighten(0.25.normalized))
           .beside(
             Image
-              .triangle(200,200)
+              .triangle(200, 200)
               .strokeWidth(30)
               .strokeColor(Color.darkSlateBlue.spin(20.degrees))
               .fillColor(Color.darkSlateBlue.spin(20.degrees).lighten(0.25.normalized))
           )
       )
 
-//  val image =
-//    Image
-//      .circle(10)
-//      .fillColor(Color.red)
-//      .on(Image.circle(20).fillColor(Color.aquamarine))
-//      .on(Image.circle(30).fillColor(Color.steelBlue))
+  //  val image =
+  //    Image
+  //      .circle(10)
+  //      .fillColor(Color.red)
+  //      .on(Image.circle(20).fillColor(Color.aquamarine))
+  //      .on(Image.circle(30).fillColor(Color.steelBlue))
 
-  val animation =
-    Reactor
-      .init(-200)
-      .onTick(x => x + 1)
-      .stop(x => x > 200)
-      .tickRate(20.millis)
-      .render{x =>
-        val y = x.degrees.sin * 200
-        val planet = Image.circle(20.0).noStroke.fillColor(Color.seaGreen)
-        val moon = Image.circle(5.0).noStroke.fillColor(Color.slateGray).at((x * 10).degrees.cos * 50, (x * 10).degrees.sin * 50)
-
-        moon.on(planet).at(x, y)
-      }
+//  val animation =
+//    Reactor
+//      .init(-200)
+//      .onTick(x => x + 1)
+//      .stop(x => x > 200)
+//      .tickRate(20.millis)
+//      .render { x =>
+//        val y = x.degrees.sin * 200
+//        val planet = Image.circle(20.0).noStroke.fillColor(Color.seaGreen)
+//        val moon = Image.circle(5.0).noStroke.fillColor(Color.slateGray).at((x * 10).degrees.cos * 50, (x * 10).degrees.sin * 50)
+//
+//        moon.on(planet).at(x, y)
+//      }
 
   val frame = Frame.size(600, 600)
 
@@ -102,6 +101,6 @@ object Example {
     image.draw()
 
     // Comment out the above and uncomment the below to display the animation
-//     animation.run(frame)
+    //     animation.run(frame)
   }
 }
