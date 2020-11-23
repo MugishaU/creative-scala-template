@@ -3,8 +3,12 @@ import doodle.image._
 import doodle.image.syntax._
 import doodle.image.syntax.core._
 import doodle.java2d._
+import packageP._
 
 object Street{
+  val check: Int =
+    packageP.One.one
+
  val roadTile : Image =
    Image
      .rectangle(210,50)
