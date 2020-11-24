@@ -97,10 +97,10 @@ object Example {
   val frame = Frame.size(600, 600)
 
 
-  def main(args: Array[String]): Unit = {
-    image.draw()
-
-    // Comment out the above and uncomment the below to display the animation
-    //     animation.run(frame)
-  }
+//  def main(args: Array[String]): Unit = {
+//    image.draw()
+//
+//    // Comment out the above and uncomment the below to display the animation
+//    //     animation.run(frame)
+//  }
 }
