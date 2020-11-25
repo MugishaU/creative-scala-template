@@ -14,8 +14,8 @@ object Chp62 {
     num / 2.0
   }
 
-  def main(args: Array[String]): Unit = {
-    println("square: " + square(6))
-    println("halve: " + halve(6))
-  }
+//  def main(args: Array[String]): Unit = {
+//    println("square: " + square(6))
+//    println("halve: " + halve(6))
+//  }
 }
