@@ -73,12 +73,12 @@ object Example {
           )
       )
 
-  //  val image =
-  //    Image
-  //      .circle(10)
-  //      .fillColor(Color.red)
-  //      .on(Image.circle(20).fillColor(Color.aquamarine))
-  //      .on(Image.circle(30).fillColor(Color.steelBlue))
+    val image2 =
+      Image
+        .circle(10)
+        .fillColor(Color.red)
+        .on(Image.circle(20).fillColor(Color.aquamarine))
+        .on(Image.circle(30).fillColor(Color.steelBlue))
 
 //  val animation =
 //    Reactor
