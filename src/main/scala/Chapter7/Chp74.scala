@@ -1,5 +1,4 @@
 package Chapter7
-import doodle.core.Color.white
 import doodle.core._
 import doodle.image._
 import doodle.image.syntax._
@@ -87,9 +86,7 @@ object Chp74 {
 
   }
 
-  def main(args: Array[String]): Unit = {
-    cross(0).draw()
-    cross(1).draw()
-    cross (8).draw()
-  }
+//  def main(args: Array[String]): Unit = {
+//    cross (10).draw()
+//  }
 }
