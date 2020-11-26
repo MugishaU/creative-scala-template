@@ -19,9 +19,9 @@ object Chp71{
     }
   }
 
-  def main(args: Array[String]): Unit = {
-    boxes(5).draw()
-    boxes(0).draw()
-    boxes(1).draw()
-  }
+//  def main(args: Array[String]): Unit = {
+//    boxes(5).draw()
+//    boxes(0).draw()
+//    boxes(1).draw()
+//  }
 }
