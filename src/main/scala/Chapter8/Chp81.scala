@@ -30,11 +30,11 @@ object Chp81 {
       case n => chessboard(n-1).beside(chessboard(n-1)).below(chessboard(n-1).beside(chessboard(n-1)))
     }
   }
-  def main(args: Array[String]): Unit = {
-    chessboard(0).draw()
-    chessboard(1).draw()
-    chessboard(2).draw()
-    chessboard(3).draw()
-
-  }
+//  def main(args: Array[String]): Unit = {
+//    chessboard(0).draw()
+//    chessboard(1).draw()
+//    chessboard(2).draw()
+//    chessboard(3).draw()
+//
+//  }
 }
