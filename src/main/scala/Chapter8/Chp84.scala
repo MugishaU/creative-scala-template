@@ -27,8 +27,7 @@ object Chp84 {
     draw(count)
   }
 
-  def main(args: Array[String]): Unit = {
-    chessboard(3).draw()
-
-  }
+//  def main(args: Array[String]): Unit = {
+//    chessboard(3).draw()
+//  }
 }
