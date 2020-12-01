@@ -64,10 +64,10 @@ object Chp83 {
         )
     }
   }
-  def main(args: Array[String]): Unit = {
-    concentric(20).draw()
-    concentric(20,100).draw()
-    concentric(50,5).draw()
-  }
+//  def main(args: Array[String]): Unit = {
+//    concentric(20).draw()
+//    concentric(20,100).draw()
+//    concentric(50,5).draw()
+//  }
 
 }
