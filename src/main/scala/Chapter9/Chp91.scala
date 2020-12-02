@@ -14,7 +14,7 @@ object Chp91 {
   val roseFn = (angle: Angle) =>
     Point.cartesian((angle * 7).cos * angle.cos, (angle * 7).cos * angle.sin)
 
-  def main(args: Array[String]): Unit = {
-    println(roseFn(90.degrees))
-  }
+//  def main(args: Array[String]): Unit = {
+//    println(roseFn(90.degrees))
+//  }
 }
