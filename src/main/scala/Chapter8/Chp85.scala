@@ -18,12 +18,9 @@ object Chp85 {
       case 0 => base
       case n => (altChess(n-1,color.spin((n*5).degrees)) beside altChess(n-1,color.spin((n*20).degrees))) above (altChess(n-1,color.spin((n*20).degrees)) beside altChess(n-1,color.spin((n*5).degrees)))
     }
-
-
-
   }
 
-  def main(args: Array[String]): Unit = {
-    altChess(5,Color.blue).draw()
-  }
+//  def main(args: Array[String]): Unit = {
+//    altChess(5,Color.blue).draw()
+//  }
 }
