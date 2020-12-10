@@ -31,7 +31,7 @@ object Chp96 {
     loop(samples)
   }
 
-  def main(args: Array[String]): Unit = {
-    sample(500,dot,epicycloid(7,13,25)).draw()
-  }
+//  def main(args: Array[String]): Unit = {
+//    sample(500,dot,epicycloid(7,13,25)).draw()
+//  }
 }

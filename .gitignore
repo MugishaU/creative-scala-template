@@ -24,3 +24,4 @@ project/plugins/project/
 # other
 .sbt-hydra-history
 repository
+.bsp/
