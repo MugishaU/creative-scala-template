@@ -27,8 +27,8 @@ object Chp101 {
 
   val paths = openPaths above closedPaths
 
-  def main(args: Array[String]): Unit = {
-    closedPaths.draw()
-  }
+//  def main(args: Array[String]): Unit = {
+//    closedPaths.draw()
+//  }
 }
 
